@@ -1,0 +1,83 @@
+/* style.css */
+
+/* General body styling */
+body {
+  --dot-bg: #232528;
+  --dot-color: #2F3237;
+  --dot-size: 2px;
+  --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  
+}
+
+/*
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+*/
+
+
+/* Styling the .box container */
+
+.box {
+  background-color: #232528;
+  padding: 20px;
+  border-radius: 2px;
+  /*border: 1px solid #FFC145;*/
+  border: 15px solid transparent;
+  outline: 2px solid #FFCF70;
+  background:
+    conic-gradient(from 90deg at 2px 2px,#0000 25%,#F0C060 0)
+     0 0/calc(100% - 2px) calc(100% - 2px) padding-box border-box;
+  
+  outline-offset: -10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/*
+.box {
+  width: 150px;
+  height: 200px;
+  border: 15px solid transparent;
+  outline: 2px solid #000;
+  outline-offset: -10px;
+  background:
+    conic-gradient(from 90deg at 2px 2px,#0000 25%,#000 0)
+     0 0/calc(100% - 2px) calc(100% - 2px) padding-box border-box;
+}
+*/
+
+
+/* Styling the heading */
+#welcome {
+  font-size: 36px;
+  color: #FFFCFF;
+  margin-bottom: 10px;
+}
+
+/* Styling the paragraph */
+p {
+  font-size: 18px;
+  color: #666666;
+}
