@@ -49,10 +49,21 @@ body {
      0 0/calc(100% - 2px) calc(100% - 2px) padding-box border-box;
   
   outline-offset: -10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
   text-align: center;
   max-width: 400px;
   width: 100%;
+  animation: expandWidth 0.4s ease-in-out forwards;
+}
+
+/* Animating the width of the box */
+@keyframes expandWidth {
+  0% {
+    width: 25%;/* Starting width */
+  }
+  100% {
+    width: 400px; /* Final width */
+  }
 }
 
 /*
